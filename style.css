@@ -1,0 +1,239 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Dancing+Script&family=IBM+Plex+Sans+Arabic:wght@100&family=Lobster&family=M+PLUS+Rounded+1c:wght@100&display=swap');
+
+:root {
+    --background-color:#f2f2f2;
+    --main-color: #000000;
+    --hover-color:#4379ad;
+    --font-size: 16px;
+    --color-section:#e4e7e6;
+
+  }
+  
+  
+  *{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  body{
+    text-align:right;
+    background:var(--background-color);
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem ;
+    margin-left:3rem;
+    margin-right:3rem;
+    background:#ffffff;
+    border-color: var(--background-color);  
+    border-width: 0px 0px 1px;  
+    border-style: inset;   
+  }
+ 
+
+.logo img {
+  width:auto; 
+  height:4rem;
+  /* height: auto; */
+  margin-left:1em;
+}
+
+.navigation  a {
+  text-decoration: none;
+  color: var(--main-color);
+  margin-right:1.2em; 
+  font-weight: bold;
+  font-size: var(--font-size);
+  transition: 0.2s ;
+  font-family:'Amiri', serif;
+} 
+
+.navigation a:hover {
+  color:var(--hover-color)
+}
+
+
+/* all seaction */
+ 
+section {
+  width: 85%;
+  height:80vh;
+  background-color:var( --color-section);
+  margin:1rem auto;
+  padding:1rem;
+  border:1px solid #ffffff;
+  /* border-radius:.5rem; */
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3),
+              -1px -2px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); */
+         
+}
+
+/* main section  */
+
+.main {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-between;
+}
+
+.countainer-imgs {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.countainer-imgs .img1 {
+  position: relative;
+  height:20rem;
+  weight:auto;
+  top: 1rem;
+  left: 0rem;
+  z-index:4
+}
+
+.countainer-imgs  .dot {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  background-color: #909298;
+  filter: blur(1rem);
+  border-radius: 50%;
+  display: inline-block;
+  left: 2.8rem;
+  bottom:1.5rem;
+  box-shadow:1rem 0.4rem 4rem #cfd4ca,
+            -1rem 0.4rem 4rem #cfd4ca;
+}
+
+/* text in main section  */
+
+.welcome{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-between;
+  font-family: 'Dancing Script';
+  font-size:3rem;
+  line-height:2;
+  
+}
+.band{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-between;
+  font-size:6rem;
+  margin-left:6rem;
+}
+
+/* end text in main section  */
+
+/* end main section  */
+
+
+/* card */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:3rem;  
+
+  
+}
+
+#cards-container .card-img-top {
+  display: block;
+  margin: 0 auto;
+  padding:1rem;
+  height: 50%;
+  width: 50%;
+}
+
+#cards-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:3rem;  
+  justify-content:space-between;
+
+}
+
+.card{
+  width:10rem;
+  height:auto;
+  gap:2rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3),
+              -1px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  white-space: nowrap; 
+  width: auto; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer; 
+  text-align: left;
+  font-weight: bold;
+  padding-bottom:0.5rem;
+  border-color: var(--background-color);  
+  border-width: 0px 0px 2px;  
+  border-style: inset;   
+  transition: all 0.5s ease;
+
+}
+
+
+.card-text {
+  font-family: sans-serif;
+  padding-top:1rem;
+  white-space: nowrap; 
+  width: auto; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer; 
+  text-align:left;
+  padding-bottom:0.5rem;
+  border-color: var(--background-color);  
+  border-width: 0px 0px 2px;  
+  border-style: inset; 
+}
+
+.price{
+  text-align:left;
+  font-weight:600
+}
+
+.card-title:hover {
+  overflow: visible;
+  white-space: normal;
+  /* margin-top:0; */
+}
+
+
+
+
+/* end card */
+.text-details{
+  font-family: sans-serif;
+  padding-top:1rem;
+  text-align:left;
+  padding-bottom:0.5rem;
+  border-color: var(--background-color);  
+  border-width: 0px 0px 2px;  
+  border-style: inset; 
+  margin-bottom:2rem
+}
+
+

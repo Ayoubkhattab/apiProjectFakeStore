@@ -1,0 +1,81 @@
+font-family: 'Amiri', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+
+
+category
+description
+id
+image : done
+price :done
+title :done
+
+
+// ----- طريقة ثانية لجلب المنتجات --------
+
+// async function getData() {
+//     const response = await fetch(api);
+//     const data = await response.json();
+//     let product = '';
+//     for (let item of data) {
+//         product += `
+//             <div class="card" style="width: 18rem;">
+//                 <img src="${item.image}" alt="${item.title}">
+//                 <div class="card-body">
+//                     <h5 class="card-title">${item.title}</h5>
+//                     <p class="card-text">${item.description}</p>
+//                     <p class="card-text">Price: $${item.price}</p>
+//                     <a href="#" class="btn btn-primary">show details</a>
+//                 </div>
+//             </div>`;
+//     }
+//     document.querySelector("#cards-container").innerHTML = product;
+// }
+// getData();
+
+
+// let x=fetch('https://fakestoreapi.com/products/1')
+//             .then(res=>res.json())
+//             .then(json=>console.log(json))
+// console.log(x);
+
+
+// const urlParams = new URLSearchParams(window.location.search);
+// const productId = urlParams.get('id');
+
+// console.log(productId);
+
+// // استدعاء بيانات المنتج وملء تفاصيل المنتج
+// async function getProductDetails(productId) {
+//     try {
+//         const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
+
+//         const productData = await response.json();
+//         console.log(productData);
+
+//         // ملء تفاصيل المنتج بواسطة بيانات المنتج المستردة
+
+//         const productDetailsContainer = document.getElementById('product-details');
+//         productDetailsContainer.innerHTML = `
+
+//         <h2>${productData.title}</h2>
+
+//         <img src="${productData.image}" alt="${productData.title}">
+
+//         <p>${productData.description}</p>
+
+//         <p>Price: $${productData.price}</p>
+//     `;
+//     } catch (error) {
+//         console.log('حدث خطأ في استدعاء بيانات المنتج', error);
+//     }
+// }
+
+// // استدعاء الوظيفة لاسترداد وعرض تفاصيل المنتج عند تحميل الصفحة
+// getProductDetails(productId);
+
+
+{/* <a href="product-details.html?id=PRODUCT_ID" class="btn btn-primary">Show Details</a> */ }
+
